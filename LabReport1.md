@@ -54,7 +54,7 @@ $ cat /home/linux/ieng6/cs15lsp23/public/hello.txt
 
 ![Image](commands-screenshot.png)
 
-18. To exit the remote server, type '$ exit' into the terminal or run ctrl + D. 
+18. To exit the remote server, type `$ exit` into the terminal or run ctrl + D. 
 19. Now, you will make a Github account. Go to [Github](https://github.com) and make an account
 20. Click the plus in the top right corner to make a new Github repo. Name it "cse15l-lab-reports"
 
