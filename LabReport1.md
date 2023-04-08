@@ -8,3 +8,32 @@ In this lab report, I will be showing you how to set up the CSE 15L account.
 3. Click on the button that corresponds with your CSE 15L account (cs15lsp23xx)
 
 ![Image](UCSD-Account-Lookup-Screenshot.png)
+
+4. Click the link to go to the "Global Password Change Tool." Then click "Proceed to the Password Change Tool"
+5. Enter your CSE 15L account name: cs15lsp23xx, where xx is 2 unique characters for your account. 
+6. Click: "I want to reset my course-specific account password." This will send an email to your UCSD to email to change your password. 
+
+![Image](Password-change-email-screenshot.png)
+
+7. Create a new password thorugh the link in your email. It should follow these rules: 
+- Not be compromised.
+- Be different from any previous passwords.
+- Be at least 12 characters long.
+- Include characters from at least 3 of the following 4 categories: uppercase, lowercase, numbers, and symbols.
+- Not contain any part of your username.
+- Passphrases are preferred.
+
+8. Now, use this link to instal Visual Studio Code: [Visual Studio Code](https://code.visualstudio.com)
+
+![Image](VScode-download-screenshot.png)
+
+9. If on Windows, install Git [Git for Windows](https://gitforwindows.org)
+10. On Visual Studio Code, open new terminal (ctrl + `)
+11. Type ctrl + shift + p to open the command pallete
+12. Type: "Select Default Profile" and click and Bash
+
+![Image](bash-screenshot.png)
+
+13. Now, make a new terminal -- it should be Bash now. 
+
+
