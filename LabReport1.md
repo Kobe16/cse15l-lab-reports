@@ -24,7 +24,7 @@ This lab report is based on the [CSE 15L Week 1 site](https://ucsd-cse15l-s23.gi
 - Not contain any part of your username.
 - Passphrases are preferred.
 
-8. Now, use this link to instal Visual Studio Code: [Visual Studio Code](https://code.visualstudio.com)
+8. Now, use this link to install Visual Studio Code: [Visual Studio Code](https://code.visualstudio.com)
 
 ![Image](VScode-download-screenshot.png)
 
@@ -48,7 +48,6 @@ $ cd ~
 $ cd
 $ ls -lat
 $ ls -a
-$ ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, where the abc is one of the other group members’ username
 $ cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
 $ cat /home/linux/ieng6/cs15lsp23/public/hello.txt
 ```
@@ -71,7 +70,4 @@ $ cat /home/linux/ieng6/cs15lsp23/public/hello.txt
 25. To view this markdown file on your github pages website, add `/<markdownFilename>.html` to the end of your github website link. 
 
 
-
 Congratualations, you have now completed the starter guide for CSE 15L!
-
-
