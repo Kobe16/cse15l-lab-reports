@@ -36,7 +36,7 @@ This lab report is based on the [CSE 15L Week 1 site](https://ucsd-cse15l-s23.gi
 ![Image](bash-screenshot.png)
 
 13. Now, make a new terminal -- it should be Bash now. 
-14. Type the following command: `$ ssh cs15lsp23zz@ieng6.ucsd.edu`. Type `yes` to any messages that pop up. 
+14. Type the following command: `$ ssh cs15lsp23xx@ieng6.ucsd.edu`, where xx are 2 characters from your username. Type `yes` to any messages that pop up. 
 15. Enter your password from before. It'll be invisible when you type it out. Don't worry about this. 
 16. It should look something like this if you are successful: 
 
