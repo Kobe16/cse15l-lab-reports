@@ -35,5 +35,29 @@ In this lab report, I will be showing you how to set up the CSE 15L account.
 ![Image](bash-screenshot.png)
 
 13. Now, make a new terminal -- it should be Bash now. 
+14. Type the following command: `$ ssh cs15lsp23zz@ieng6.ucsd.edu`. Type `yes` to any messages that pop up. 
+15. Enter your password from before. It'll be invisible when you type it out. Don't worry about this. 
+16. It should look something like this if you are successful: 
+
+![Image](SSH-information-screenshot.png)
+
+17. Play around with some of these commands: 
+```
+$ cd ~
+$ cd
+$ ls -lat
+$ ls -a
+$ ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, where the abc is one of the other group members’ username
+$ cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
+$ cat /home/linux/ieng6/cs15lsp23/public/hello.txt
+```
+
+18. To exit the remote server, type '$ exit' into the terminal or run ctrl + D. 
+19. Now, you will make a Github account. Go to [Github](https://github.com) and make an account
+20. Click the plus in the top right corner to make a new Github repo. Name it "cse15l-lab-reports"
+
+![Image](make-githubaccount-screenshot.png)
+
+21. 
 
 
