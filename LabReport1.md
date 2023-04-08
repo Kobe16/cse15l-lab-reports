@@ -2,7 +2,7 @@
 ## By: Kobe Yang
 
 In this lab report, I will be showing you how to set up the CSE 15L account. 
-This lab report is based on the [CSE 15L Week 1 site] (https://ucsd-cse15l-s23.github.io/week/week1/).
+This lab report is based on the [CSE 15L Week 1 site](https://ucsd-cse15l-s23.github.io/week/week1/).
 
 1. First, you will be resetting the password for your CSE 15L specific account. 
 2. Go to this website and enter your UCSD username and student ID: [UCSD Account Lookup](https://sdacs.ucsd.edu/~icc/index.php)
