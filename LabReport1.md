@@ -58,6 +58,12 @@ $ cat /home/linux/ieng6/cs15lsp23/public/hello.txt
 
 ![Image](make-githubaccount-screenshot.png)
 
-21. 
+21. Click "“Create a new file” and make new file called index.md
+22. Click "Settings", then click "Pages", then select the /root directory as your folder. Click "main" as the source branch
+23. You'll now be able to view your `index.md` file as a Github Pages website. 
+24. Create another markdown file (.md) in your repo. Use this [website](https://commonmark.org/help/) to help you format it. 
+25. To view this markdown file on your github pages website, add `/<markdownFilename>.html` to the end of your github website link. 
+
+Congratualations, you have now completed the starter guide for CSE 15L!
 
 
