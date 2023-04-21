@@ -43,16 +43,16 @@ This lab report is based on the [CSE 15L Week 1 site](https://ucsd-cse15l-s23.gi
 ![Image](SSH-information-screenshot.png)
 
 17. Play around with some of these commands: 
-```
-$ cd ~
-$ cd
-$ ls -lat
-$ ls -a
-$ cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
-$ cat /home/linux/ieng6/cs15lsp23/public/hello.txt
-```
+
+`$ cd ~`  - changes directory to the home directory
+`$ cd <path> ` - changes directory to specified path
+`$ ls -lat` - lists out all hidden and unhidden files & folders in current directory in long format, by the time last modified. 
+`$ ls -a` - lists out all hidden and unhidden files & folders in current directory
+`$ cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/` - copies hello.txt to home directory
+`$ cat /home/linux/ieng6/cs15lsp23/public/hello.txt` - prints out the content of hello.txt
 
 ![Image](commands-screenshot.png)
+In this screenshot, I used the command `$ ls -lat`, which listed out all hidden and unhidden files & folders in current directory in long format, by the time last modified. I then used the command `$ cat /home/linux/ieng6/cs15lsp23/public/hello.txt`, which printed out the content of hello.txt. Notice how I specified the path to the hello.txt file -- this way, the terminal knows where to look for this file. 
 
 18. To exit the remote server, type `$ exit` into the terminal or run ctrl + D. 
 19. Now, you will make a Github account. Go to [Github](https://github.com) and make an account
