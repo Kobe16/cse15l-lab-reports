@@ -45,10 +45,15 @@ This lab report is based on the [CSE 15L Week 1 site](https://ucsd-cse15l-s23.gi
 17. Play around with some of these commands: 
 
 *`$ cd ~`  - changes directory to the home directory
+
 *`$ cd <path> ` - changes directory to specified path
+
 *`$ ls -lat` - lists out all hidden and unhidden files & folders in current directory in long format, by the time last modified. 
+
 *`$ ls -a` - lists out all hidden and unhidden files & folders in current directory
+
 *`$ cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/` - copies hello.txt to home directory
+
 *`$ cat /home/linux/ieng6/cs15lsp23/public/hello.txt` - prints out the content of hello.txt
 
 ![Image](commands-screenshot.png)
