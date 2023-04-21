@@ -56,6 +56,8 @@ This lab report is based on the [CSE 15L Week 1 site](https://ucsd-cse15l-s23.gi
 
 `$ cat /home/linux/ieng6/cs15lsp23/public/hello.txt` - prints out the content of hello.txt
 
+Check out this guide for some more commands: [Codecademy Command Line](https://www.codecademy.com/learn/learn-the-command-line/modules/learn-the-command-line-manipulation/cheatsheet) (I looked at this guide for the definitions of some of the commands). 
+
 ![Image](commands-screenshot.png)
 In this screenshot, I used the command `$ ls -lat`, which listed out all hidden and unhidden files & folders in current directory in long format, by the time last modified. I then used the command `$ cat /home/linux/ieng6/cs15lsp23/public/hello.txt`, which printed out the content of hello.txt. Notice how I specified the path to the hello.txt file -- this way, the terminal knows where to look for this file. 
 
