@@ -54,6 +54,7 @@ An example URL would look like this: `http://localhost:4004/add-message?s=thiswi
 Here is a look at my site in action: 
 
 ![Image](LabReport2Screenshot1.png)
+
 Here, the string that is added to the main string is `"Water"`
 
 In `StringServer.java`, the `handleRequest` method is called. This method has one argument: URI url. This represents the URL that has just be inputted. 
@@ -62,8 +63,10 @@ Within the `Handler` class, the `mainString` string has also been initialized wi
 
 The only value that is modified in this method call is `mainString`. The string `"Water" + "\n"` has now been concatenated onto `mainString`.
 
+---
 
 ![Image](LabReport2Screenshot2.png)
+
 Here, the string that is added to the main string is `"Grass"`
 
 In `StringServer.java`, the `handleRequest` method is called. This method has one argument: URI url. This represents the URL that has just be inputted. 
@@ -107,6 +110,7 @@ Here is a non-failure-inducing input.
 
 Here is the output of these inputs: 
 ![Image](LabReport2Screenshot3.png)
+
 It seems that the symptom of this code is that it returns an integer array full of zeros, no matter the input array. Why is this? In the second line of the method, we see that we created a new intger array called `newArray`. This is supposed to be the array that we'll put the reverse elements into and return. However, inside the for-loop, we are not actually placing anything inside `newArray`! We are placing the elements of `newArray` into our input array `arr` in reverse order. Since we initialized `newArray` with a specified length, Java automatically filled each element of `newArray` with the default value of zero. This means that we were copying zeros into `arr`. Lastly, we see that we didn't even return `newArray`. Instead we returned `arr`, which is now an array filled with zeros. 
 
 Here is the code after I fixed the bug. I have now made sure that we are writing the values of `arr` into `newArray` this time. Additionally, I have returned `newArray` at the end of the method. This will fix the bugs stated above. 
