@@ -4,6 +4,8 @@
 In this lab report, I will be demonstrating a web server made in Java. 
 This lab report is based on the CSE 15L [Week 2 site](https://ucsd-cse15l-s23.github.io/week/week2/) and [Week 3 site](https://ucsd-cse15l-s23.github.io/week/week3/)
 
+## Part 1
+
 I have created a Java web server called StringServer that will perform a certain action if a certain path and query is inputted. 
 
 There are two main files that are involved in this webserver: `Server.java` (which was provided to us through Week 2's website and contains essential code for setting up and running the web server) and `StringServer.java` (which contains the functionalities of my website, including my path and query options). 
@@ -61,7 +63,6 @@ Within the `Handler` class, the `mainString` string has also been initialized wi
 The only value that is modified in this method call is `mainString`. The string `"Water" + "\n"` has now been concatenated onto `mainString`.
 
 
-
 ![Image](LabReport2Screenshot2.png)
 Here, the string that is added to the main string is `"Grass"`
 
@@ -72,6 +73,55 @@ Within the `Handler` class, the `mainString` string has also been initialized wi
 The only value that is modified in this method call is `mainString`. The string `"Grass" + "\n"` has now been concatenated onto `mainString`.
 
 
+## Part 2
+In this section, I will explain the `reversed()` method from Lab 3 and the bug associated with it. The `reversed()` method is meant to return a new array where the items of the original array have been placed in reverse order. 
+
+Here is the original code of the `reversed()` method. It takes an input integer array called `arr`. 
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+
+Here is a failure-inducing input. 
+```
+@Test
+  public void testReversed3() {
+    int[] input1 = { 4, 5, 3, 2, 1};
+    assertArrayEquals(new int[]{1, 2, 3, 5, 4}, ArrayExamples.reversed(input1));
+  }
+```
+
+Here is a non-failure-inducing input. 
+```
+@Test
+  public void testReversed2() {
+    int[] input1 = {0, 0, 0};
+    assertArrayEquals(new int[]{0, 0, 0}, ArrayExamples.reversed(input1));
+  }
+```
+
+Here is the output of these inputs: 
+![Image](LabReport2Screenshot3.png)
+It seems that the symptom of this code is that it returns an integer array full of zeros, no matter the input array. Why is this? In the second line of the method, we see that we created a new intger array called `newArray`. This is supposed to be the array that we'll put the reverse elements into and return. However, inside the for-loop, we are not actually placing anything inside `newArray`! We are placing the elements of `newArray` into our input array `arr` in reverse order. Since we initialized `newArray` with a specified length, Java automatically filled each element of `newArray` with the default value of zero. This means that we were copying zeros into `arr`. Lastly, we see that we didn't even return `newArray`. Instead we returned `arr`, which is now an array filled with zeros. 
+
+Here is the code after I fixed the bug. I have now made sure that we are writing the values of `arr` into `newArray` this time. Additionally, I have returned `newArray` at the end of the method. This will fix the bugs stated above. 
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+```
+
+## Part 3
+In the past two weeks, I have learned many useful things related to programming. I think the coolest thing that I learned is how to set up a Java web server and making it reactive to inputted paths and queries. This means that we can dynamically generate content based on the user's input. Naturally, you can see how this feature may be used for simple applications, such as a calculator or a simple social media site. I think that the coding behind it is pretty interesting. 
 
 
 
