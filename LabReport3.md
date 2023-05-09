@@ -13,7 +13,7 @@ ___
 ## Command Line Options for `grep`
 Note, for the following examples, I will be in the directory `docsearch` directory, which contains the `technical` subdirectory. 
 
-1. `-n` option - this option prints out all lines that match the specified pattern *along with* the line numbers. This is useful because it lets you see the direct locations where the specified string appears, instead of just the lines themselves. You can now locate the occurrences of this string easily. 
+1. `-n` option - this option prints out all lines that match the specified pattern *along with* the line numbers. This is useful because it lets you see the direct locations where the specified string appears, instead of just the lines themselves. You can now locate the occurrences of this string easily. (Source: [Geeks For Geeks] (https://www.geeksforgeeks.org/grep-command-in-unixlinux/))
 
 Input 1: 
 `grep -n "6:45" technical/911report/chapter-1.txt`
@@ -38,7 +38,7 @@ Output 2:
 
 ___
 
-2. `-c` option - this option does not print out the lines that contain the specified string. Instead, it prints out the *number* of lines that contain the string. This may be useful in identifying the main idea of a file (i.e., if a certain word comes up a lot in file, then it must be important to the main idea of the file). 
+2. `-c` option - this option does not print out the lines that contain the specified string. Instead, it prints out the *number* of lines that contain the string. This may be useful in identifying the main idea of a file (i.e., if a certain word comes up a lot in file, then it must be important to the main idea of the file). (Source: [Geeks For Geeks] (https://www.geeksforgeeks.org/grep-command-in-unixlinux/))
 
 Input 1: 
 `grep -c "obesity" technical/biomed/1468-6708-3-1.txt`
@@ -58,7 +58,7 @@ Output 2:
 
 ___
 
-3. `-v` option - this option prints out all lines that don't contain the specified string. This may be useful in filtering out certain phrases that are needlessly repeated in the a file. It can also help you search for ideas that are not as prominent in the file. 
+3. `-v` option - this option prints out all lines that don't contain the specified string. This may be useful in filtering out certain phrases that are needlessly repeated in the a file. It can also help you search for ideas that are not as prominent in the file. (Source: [Geeks For Geeks] (https://www.geeksforgeeks.org/grep-command-in-unixlinux/)) 
 
 Input 1: 
 `grep -v "Whistleblowers" technical/plos/pmed.0020281.txt`
@@ -150,5 +150,64 @@ in touch with us later on the subject.
 
 ___
 
-6. `-A n` option
+4. `-A n` option - this option prints out n-number of lines after each occurence of the string, plus the original line containing the string. This may be useful to gather come context around an idea or to learn more on what the file is saying about a specific word without worrying about skimming through pages of unrelated material. (Source: [Geeks For Geeks] (https://www.geeksforgeeks.org/grep-command-in-unixlinux/))
+
+Input 1: 
+`grep -A 2 "Arabs" technical/911report/chapter-2.txt`
+
+Output 1: 
+```
+                Prophet Mohammed as a golden age. Its memory is strongest among the Arabs. What
+                happened then-the spread of Islam from the Arabian Peninsula throughout the Middle
+                East, North Africa, and even into Europe within less than a century- seemed, and
+--
+                extreme view of Islamic history designed to appeal mainly to Arabs and Sunnis. He
+                draws on fundamentalists who blame the eventual destruction of the Caliphate on
+                leaders who abandoned the pure path of religious devotion.
+--
+                These charges found a ready audience among millions of Arabs and Muslims angry at
+                the United States because of issues ranging from Iraq to Palestine to America's
+                support for their countries' repressive rulers.
+--
+                duties as the custodian of Islam's holiest places, joined with wealthy Arabs from
+                the Kingdom and other states bordering the Persian Gulf in donating money to build
+                mosques and religious schools that could preach and teach their interpretation of
+--
+                vision of their faith, not the violent sectarianism of Bin Ladin. Among Arabs, Bin
+                Ladin's followers are commonly nicknamed takfiri, or "those who define other Muslims
+                as unbelievers," because of their readiness to demonize and murder those with whom
+--
+                "Afghan Arabs" drew largely on funds raised by this network, whose agents roamed
+                world markets to buy arms and supplies for the mujahideen, or "holy warriors."
+```
+
+Input 2: 
+`grep -A 4 "metalloprotease" technical/plos/journal.pbio.0020013.txt`
+
+Output 2: 
+```
+        Yao and Cohen 2002). This metalloprotease-like activity maps to the putative catalytic
+        MPN+/JAMM motif of the lid subunit Rpn11 and lies at the heart of proteasome mechanism by
+        linking deubiquitination with protein degradation. Notably, Rpn11 shares close homology
+        with Csn5, which is also responsible for proteolytic activities in its respective
+        complex.
+        By defining a new family of putative metalloproteases that includes a proteasomal
+        subunit, a CSN subunit, and additional proteins from all domains of life, the MPN
+        + /JAMM motif garnered great attention. The trademark of the MPN
+        + /JAMM motif is a consensus sequence E—HxHx
+        (7) Sx
+--
+        metalloproteases. Members of this family were predicted to be hydrolytic enzymes, some of
+        which are specific for removal of ubiquitin or ubiquitin-like domains from their targets
+        (Maytal-Kivity et al. 2002; Verma et al. 2002; Yao and Cohen 2002).
+        In a further development, two independent groups determined the molecular structure of
+        an MPN
+--
+        Now that it is evident that the proteasome contains a member of a novel metalloprotease
+        family, a fundamental question can be raised: why does a proteolytic enzyme like the
+        proteasome need auxiliary proteases for hydrolysis of ubiquitin domains? At first glance,
+        the delegation of tasks between the proteolytic subunits of the proteasome (situated in the
+        proteolytic core particle) and the auxiliary deubiquitinating enzymes (situated in the
+```
+
 
