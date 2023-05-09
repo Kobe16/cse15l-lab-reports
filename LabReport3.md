@@ -3,6 +3,7 @@
 
 In this lab report, I will be demonstrating some different functionalities of the command `grep`. 
 This lab report is based on the CSE 15L [Week 5 Website](https://ucsd-cse15l-s23.github.io/week/week5/#week5-lab-report)
+___
 
 ## What is `grep`?
 
