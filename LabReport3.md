@@ -13,8 +13,8 @@ ___
 ## Command Line Options for `grep`
 Note, for the following examples, I will be in the directory `docsearch` directory, which contains the `technical` subdirectory. 
 
-1. `-n` option - this option prints out all lines that match the specified pattern *along with* the line numbers. This is useful because it lets you see the direct locations where the specified string appears, instead of just the lines themselves. You can now locate the occurrences of this string easily. (Source: [Geeks For Geeks] (https://www.geeksforgeeks.org/grep-command-in-unixlinux/))
-
+***1. `-n` option*** - this option prints out all lines that match the specified pattern *along with* the line numbers. This is useful because it lets you see the direct locations where the specified string appears, instead of just the lines themselves. You can now locate the occurrences of this string easily. (Source: [Geeks For Geeks] (https://www.geeksforgeeks.org/grep-command-in-unixlinux/))
+___
 Input 1: 
 `grep -n "6:45" technical/911report/chapter-1.txt`
 
@@ -38,8 +38,8 @@ Output 2:
 
 ___
 
-2. `-c` option - this option does not print out the lines that contain the specified string. Instead, it prints out the *number* of lines that contain the string. This may be useful in identifying the main idea of a file (i.e., if a certain word comes up a lot in file, then it must be important to the main idea of the file). (Source: [Geeks For Geeks] (https://www.geeksforgeeks.org/grep-command-in-unixlinux/))
-
+***2. `-c` option*** - this option does not print out the lines that contain the specified string. Instead, it prints out the *number* of lines that contain the string. This may be useful in identifying the main idea of a file (i.e., if a certain word comes up a lot in file, then it must be important to the main idea of the file). (Source: [Geeks For Geeks] (https://www.geeksforgeeks.org/grep-command-in-unixlinux/))
+___
 Input 1: 
 `grep -c "obesity" technical/biomed/1468-6708-3-1.txt`
 
@@ -58,8 +58,8 @@ Output 2:
 
 ___
 
-3. `-v` option - this option prints out all lines that don't contain the specified string. This may be useful in filtering out certain phrases that are needlessly repeated in the a file. It can also help you search for ideas that are not as prominent in the file. (Source: [Geeks For Geeks] (https://www.geeksforgeeks.org/grep-command-in-unixlinux/)) 
-
+***3. `-v` option*** - this option prints out all lines that don't contain the specified string. This may be useful in filtering out certain phrases that are needlessly repeated in the a file. It can also help you search for ideas that are not as prominent in the file. (Source: [Geeks For Geeks] (https://www.geeksforgeeks.org/grep-command-in-unixlinux/)) 
+___
 Input 1: 
 `grep -v "Whistleblowers" technical/plos/pmed.0020281.txt`
 
@@ -150,8 +150,8 @@ in touch with us later on the subject.
 
 ___
 
-4. `-A n` option - this option prints out n-number of lines after each occurence of the string, plus the original line containing the string. This may be useful to gather come context around an idea or to learn more on what the file is saying about a specific word without worrying about skimming through pages of unrelated material. (Source: [Geeks For Geeks] (https://www.geeksforgeeks.org/grep-command-in-unixlinux/))
-
+***4. `-A n` option*** - this option prints out n-number of lines after each occurence of the string, plus the original line containing the string. This may be useful to gather come context around an idea or to learn more on what the file is saying about a specific word without worrying about skimming through pages of unrelated material. (Source: [Geeks For Geeks] (https://www.geeksforgeeks.org/grep-command-in-unixlinux/))
+___
 Input 1: 
 `grep -A 2 "Arabs" technical/911report/chapter-2.txt`
 
