@@ -14,7 +14,7 @@ ___
 Note, for the following examples, I will be in the directory `docsearch` directory, which contains the `technical` subdirectory. 
 
 ***1. `-n` option*** - this option prints out all lines that match the specified pattern *along with* the line numbers. This is useful because it lets you see the direct locations where the specified string appears, instead of just the lines themselves. You can now locate the occurrences of this string easily. (Source: [Geeks For Geeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/))
-___
+
 Input 1: 
 `grep -n "6:45" technical/911report/chapter-1.txt`
 
@@ -23,7 +23,7 @@ Output 1:
 18:    Atta and Omari arrived in Boston at 6:45. Seven minutes later, Atta apparently took a call from Marwan al Shehhi, a longtime colleague who was at another terminal at Logan Airport. They spoke for three minutes.
 22:    Between 6:45 and 7:40, Atta and Omari, along with Satam al Suqami, Wail al Shehri, and Waleed al Shehri, checked in and boarded American Airlines Flight 11, bound for Los Angeles. The flight was scheduled to depart at 7:45.
 ```
-___
+
 Input 2: 
 `grep -n "goal" technical/government/About_LSC/Comments_on_semiannual.txt`
 
@@ -39,7 +39,7 @@ Output 2:
 ___
 
 ***2. `-c` option*** - this option does not print out the lines that contain the specified string. Instead, it prints out the *number* of lines that contain the string. This may be useful in identifying the main idea of a file (i.e., if a certain word comes up a lot in file, then it must be important to the main idea of the file). (Source: [Geeks For Geeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/))
-___
+
 Input 1: 
 `grep -c "obesity" technical/biomed/1468-6708-3-1.txt`
 
@@ -47,7 +47,7 @@ Output 1:
 ```
 8
 ```
-___
+
 Input 2: 
 `grep -c "scientific publications" technical/plos/journal.pbio.0020001.txt`
 
@@ -59,7 +59,7 @@ Output 2:
 ___
 
 ***3. `-v` option*** - this option prints out all lines that don't contain the specified string. This may be useful in filtering out certain phrases that are needlessly repeated in the a file. It can also help you search for ideas that are not as prominent in the file. (Source: [Geeks For Geeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)) 
-___
+
 Input 1: 
 `grep -v "Whistleblowers" technical/plos/pmed.0020281.txt`
 
@@ -97,7 +97,7 @@ success (I have adapted his comments for all of us who gathered in Washington in
 redeemed social condition; to know even one life breathed easier because you have lived;
 this is to have succeeded [as a whistleblower].”
 ```
-___
+
 Input 2: 
 `grep -v "Legal" technical/government/Media/5_Legal_Groups.txt`
 
@@ -151,7 +151,7 @@ in touch with us later on the subject.
 ___
 
 ***4. `-A n` option*** - this option prints out n-number of lines after each occurence of the string, plus the original line containing the string. This may be useful to gather come context around an idea or to learn more on what the file is saying about a specific word without worrying about skimming through pages of unrelated material. (Source: [Geeks For Geeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/))
-___
+
 Input 1: 
 `grep -A 2 "Arabs" technical/911report/chapter-2.txt`
 
@@ -180,7 +180,7 @@ Output 1:
                 "Afghan Arabs" drew largely on funds raised by this network, whose agents roamed
                 world markets to buy arms and supplies for the mujahideen, or "holy warriors."
 ```
-___
+
 Input 2: 
 `grep -A 4 "metalloprotease" technical/plos/journal.pbio.0020013.txt`
 
