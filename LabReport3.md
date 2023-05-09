@@ -23,7 +23,7 @@ Output 1:
 18:    Atta and Omari arrived in Boston at 6:45. Seven minutes later, Atta apparently took a call from Marwan al Shehhi, a longtime colleague who was at another terminal at Logan Airport. They spoke for three minutes.
 22:    Between 6:45 and 7:40, Atta and Omari, along with Satam al Suqami, Wail al Shehri, and Waleed al Shehri, checked in and boarded American Airlines Flight 11, bound for Los Angeles. The flight was scheduled to depart at 7:45.
 ```
-
+___
 Input 2: 
 `grep -n "goal" technical/government/About_LSC/Comments_on_semiannual.txt`
 
@@ -47,7 +47,7 @@ Output 1:
 ```
 8
 ```
-
+___
 Input 2: 
 `grep -c "scientific publications" technical/plos/journal.pbio.0020001.txt`
 
@@ -97,7 +97,7 @@ success (I have adapted his comments for all of us who gathered in Washington in
 redeemed social condition; to know even one life breathed easier because you have lived;
 this is to have succeeded [as a whistleblower].”
 ```
-
+___
 Input 2: 
 `grep -v "Legal" technical/government/Media/5_Legal_Groups.txt`
 
@@ -180,7 +180,7 @@ Output 1:
                 "Afghan Arabs" drew largely on funds raised by this network, whose agents roamed
                 world markets to buy arms and supplies for the mujahideen, or "holy warriors."
 ```
-
+___
 Input 2: 
 `grep -A 4 "metalloprotease" technical/plos/journal.pbio.0020013.txt`
 
