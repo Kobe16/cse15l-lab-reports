@@ -12,5 +12,5 @@ Before touching the command line, I have forked this repo on Github: [Lab 7](htt
 Input: 
 `<ctrl> <r> <s> <enter>`
 
-![Image](bash history Screen shot.png)
+![Image](bash history Screen Shot.png)
 
