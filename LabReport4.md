@@ -14,7 +14,14 @@ Input:
 
 ![Image](bash-history-Screen-Shot.png)
 
-2. I clone my fork of the lab7 repo using the `git clone` command. Again, I used the bash history command to search for my previous usage of the command. That way, I wouldn't have to type out or copy/paste the Github repo URL. Note: I typed `<u>` into the search command because I know that the Github repo URL contains the word URL.
+2. I clone my fork of the lab7 repo using the `git clone` command. Again, I used the bash history command to search for my previous usage of the command. That way, I wouldn't have to type out or copy/paste the Github repo URL. Note: I typed `<g>` into the search command because I know that the command starts with that letter. 
 
 Input: 
-`<ctrl> <r> <u> <enter>`
+`<ctrl> <r> <g> <enter>`
+
+3. I run the JUnit tests to demostrate that the tests fail. First, I must move into the `lab7` directory. Then, I ran the tests using the provided bash script: `test.sh`. These commands are fast to type out, so I didn't bother using the bash history search command. Also, I made sure to use tab to autocomplete the commands. 
+
+Input: 
+`<c> <d> <space> <l> <tab> <enter> <b> <a> <s> <h> <space> <t> <tab> <enter>`
+
+4. 
