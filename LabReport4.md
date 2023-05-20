@@ -19,7 +19,7 @@ Input:
 ![Image](ssh-to-ieng6-screenshot.png)
 ___
 
-2. I clone my fork of the lab7 repo using the `git clone` command. Again, I used the bash history command to search for my previous usage of the command. That way, I wouldn't have to type out or copy/paste the Github repo URL. Note: I typed the first few letter of `git clone` into the search command to find the command. 
+2. I clone my fork of the lab7 repo using the `git clone` command. Again, I used the bash history command to search for my previous usage of the command. That way, I wouldn't have to type out or copy/paste the Github repo URL. Note: I typed the first few letters of `git clone` into the search command to find the command. 
 
 Input: 
 `<ctrl> <r> <g> <i> <t> <space> <c> <enter>`
