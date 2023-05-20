@@ -50,7 +50,7 @@ Input to edit file:
 ![Image](editing-file-with-vim-screenshot.png)
 ___
 
-5. I rerun the JUnit tests to demostrate that the tests are now successful. This time, I used the 'up' arrow keys on my keyboard to switch to the previous command that I used to run my tests. Since I had ran my tests right before using vim, they are easy to find.
+5. I rerun the JUnit tests to demonstrate that the tests are now successful. This time, I used the 'up' arrow keys on my keyboard to switch to the previous command that I used to run my tests. Since I had ran my tests right before using vim, they are easy to find.
 
 Input: 
 `<up> <up> <enter>`
