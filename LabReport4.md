@@ -14,8 +14,7 @@ ___
 Input: 
 `<ctrl> <r> <s> <enter>`
 
-![Image](bash-history-cloning-lab7-repo-screenshot.png)
-
+![Image](bash-history-Screen-Shot.png)
 ___
 
 2. I clone my fork of the lab7 repo using the `git clone` command. Again, I used the bash history command to search for my previous usage of the command. That way, I wouldn't have to type out or copy/paste the Github repo URL. Note: I typed `<g>` into the search command because I know that the command starts with that letter. 
@@ -23,12 +22,16 @@ ___
 Input: 
 `<ctrl> <r> <g> <enter>`
 
-![Image](bash-history-Screen-Shot.png)
+![Image](bash-history-cloning-lab7-repo-screenshot.png)
+___
 
 3. I run the JUnit tests to demostrate that the tests fail. First, I must move into the `lab7` directory. Then, I ran the tests using the provided bash script: `test.sh`. These commands are fast to type out, so I didn't bother using the bash history search command. Also, I made sure to use tab to autocomplete the commands. 
 
 Input: 
 `<c> <d> <space> <l> <tab> <enter> <b> <a> <s> <h> <space> <t> <tab> <enter>`
+
+![Image](running-junit-tests-screenshot.png)
+___
 
 4. Now, I edit the `ListExamples.java` to fix the error. The error is near the bottom of the file: we are incrementing the value of `index1` by 1, but we should instead be incrementing the value of index2. I will use vim to edit the file. In vim, I use the `<?>` command to search for the last instance of the "1" character in the code (I found this command through this helpful guide online: [Using Vi/Vim: A Brief Tutorial](https://www.cduan.com/technical/vi/vi-1.shtml)). Then, I pressed `n` to move my cursor to the correct instance of the "1" character that I need to change. I use the `r` command to enter 'remove' mode and replace the "1" with a "2" (I learned this command through the vimtutor tool that was used in Lab 7). Lastly, I save and exit vim with `:wq`. 
 
