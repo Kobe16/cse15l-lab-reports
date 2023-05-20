@@ -5,7 +5,7 @@ In this lab report, I will be using the command line to demostrate some differen
 This lab report is based on the CSE 15L [Week 7 Website](https://ucsd-cse15l-s23.github.io/week/week7/)
 
 Pre-Setup: 
-Before touching the command line, I have forked this repo on Github: [Lab 7](https://github.com/ucsd-cse15l-s23/lab7)
+Before touching the command line, I forked this repo on Github: [Lab 7](https://github.com/ucsd-cse15l-s23/lab7)
 
 ___
 
