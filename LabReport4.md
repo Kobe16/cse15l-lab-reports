@@ -24,8 +24,6 @@ ___
 Input: 
 `<ctrl> <r> <g> <i> <t> <space> <c> <enter>`
 
-![Image](bash-history-cloning-lab7-repo-screenshot.png)
-
 ![Image](cloning-lab7-repo-screenshot.png)
 ___
 
