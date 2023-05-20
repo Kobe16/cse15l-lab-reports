@@ -14,7 +14,7 @@ ___
 Input: 
 `<ctrl> <r> <s> <enter>`
 
-![Image](bash-history-Screen-Shot.png)
+![Image](bash-history-cloning-lab7-repo-screenshot.png)
 
 ___
 
