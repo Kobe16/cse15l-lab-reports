@@ -58,7 +58,7 @@ Input:
 ![Image](rerunning-junit-tests-screenshot.png)
 ___
 
-6. I will now commit and push my changes to the Github repo. First, I add my `ListExamples.java` file to the staging area with the `git add` command, before committing it with the `git commit -m` command. I chose a short commit message - "update" - to save time (and because the change I made was so small). Lastly, I push the changes to the remote repo (origin) onto the 'main' branch with the `git push origin main`.
+6. I will now commit and push my changes to the Github repo. First, I add my `ListExamples.java` file to the staging area with the `git add` command, before committing it with the `git commit -m` command. I chose a short commit message - "update" - to save time (and because the change I made was so small). Lastly, I push the changes to the remote repo (origin) onto the 'main' branch with the command `git push origin main`.
 
 Input to add: 
 `<g> <i> <t> <space> <a> <d> <d> <space> <L> <tab> <.> <j> <tab> <enter>`
