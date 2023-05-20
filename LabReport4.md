@@ -38,13 +38,21 @@ ___
 Input to enter vim: 
 `<v> <i> <m> <space> <L> <tab> <.> <tab> <enter>`
 
+![Image](entering-vim-screenshot.png)
+
 Input to edit file: 
 `<?> <1> <enter> <n> <r> <2> <:> <w> <q> <enter>`
+
+![Image](entering-vim-screenshot.png)
+___
 
 5. I rerun the JUnit tests to demostrate that the tests are now successful. This time, I used the 'up' arrow keys on my keyboard to switch to the previous command that I used to run my tests. Since I had ran my tests right before using vim, they are easy to find.
 
 Input: 
 `<up> <up> <enter>`
+
+![Image](rerunning-junit-tests-screenshot.png)
+___
 
 6. I will now commit and push my changes to the Github repo. First, I add my `ListExamples.java` file to the staging area with the `git add` command, before committing it with the `git commit -m` command. I chose a short commit message - "update" - to save time (and because the change I made was so small). Lastly, I push the changes to the remote repo (origin) onto the 'main' branch with the `git push origin main`.
 
@@ -56,13 +64,9 @@ Input to commit:
 
 Input to push: 
 `<g> <i> <t> <space> <p> <u> <s> <h> <space> <o> <r> <i> <g> <i> <n> <space> <m> <a> <i> <n> <space>`
+
+![Image](git-commands-screenshot.png)
+___
   
 In this lab, I have demonstrated an understanding of the command line and the many details and features that come along with it. 
-
-
-
-
-
-
-
 
