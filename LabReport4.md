@@ -15,6 +15,8 @@ Input:
 `<ctrl> <r> <s> <enter>`
 
 ![Image](bash-history-Screen-Shot.png)
+
+![Image](ssh-to-ieng6-screenshot.png)
 ___
 
 2. I clone my fork of the lab7 repo using the `git clone` command. Again, I used the bash history command to search for my previous usage of the command. That way, I wouldn't have to type out or copy/paste the Github repo URL. Note: I typed `<g>` into the search command because I know that the command starts with that letter. 
@@ -23,6 +25,8 @@ Input:
 `<ctrl> <r> <g> <enter>`
 
 ![Image](bash-history-cloning-lab7-repo-screenshot.png)
+
+![Image](cloning-lab7-repo-screenshot.png)
 ___
 
 3. I run the JUnit tests to demostrate that the tests fail. First, I must move into the `lab7` directory. Then, I ran the tests using the provided bash script: `test.sh`. These commands are fast to type out, so I didn't bother using the bash history search command. Also, I made sure to use tab to autocomplete the commands. 
@@ -43,7 +47,7 @@ Input to enter vim:
 Input to edit file: 
 `<?> <1> <enter> <n> <r> <2> <:> <w> <q> <enter>`
 
-![Image](entering-vim-screenshot.png)
+![Image](editing-file-with-vim-screenshot.png)
 ___
 
 5. I rerun the JUnit tests to demostrate that the tests are now successful. This time, I used the 'up' arrow keys on my keyboard to switch to the previous command that I used to run my tests. Since I had ran my tests right before using vim, they are easy to find.
