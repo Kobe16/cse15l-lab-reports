@@ -43,7 +43,7 @@ Input to add:
 `<g> <i> <t> <space> <a> <d> <d> <space> <L> <tab> <.> <j> <tab> <enter>`
 
 Input to commit: 
-'<g> <i> <t> <space> <c> <o> <m> <m> <i> <t> <space> <-> <m> <space> <"> <u> <p> <d> <a> <t> <e> <"> <enter>'
+```<g> <i> <t> <space> <c> <o> <m> <m> <i> <t> <space> <-> <m> <space> <"> <u> <p> <d> <a> <t> <e> <"> <enter>```
 
 
 
