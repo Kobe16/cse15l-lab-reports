@@ -10,7 +10,7 @@ ___
 
 ## Part 1: Debugging Scenario
 
-**1) The student makes a debuggin post on EdStem**
+**1) The student makes a debugging post on EdStem**
 
 *What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?*
 I am using a M2 Macbook Air, which runs MacOS. I am currently using Safari as my web browser, Bash as my terminal shell, and VSCode for my code editor. 
