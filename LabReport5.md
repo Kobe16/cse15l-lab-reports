@@ -3,6 +3,8 @@
 
 In this lab report, I will be enacting a pretend conversation in an EdStem thread between a student and a TA. The student will pose a question about a bug in their code and the TA will analyze their code and attempt to debug/provide a solution. 
 This lab report is based on the CSE 15L [Week 9 Website](https://ucsd-cse15l-s23.github.io/week/week9/). 
+Note: The prompt/question for my code comes from the [winter 2023 WIC BPC Practice Problem Set](https://docs.google.com/document/d/1VnJoCEuYlnJbkz1J-8wQq44Yq8sF2wANhGzviV4T4x4/edit). However, I came up with the solution myself. 
+
 
 ___
 
