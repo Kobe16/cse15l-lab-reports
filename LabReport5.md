@@ -4,6 +4,10 @@
 In this lab report, I will be enacting a pretend conversation in an EdStem thread between a student and a TA. The student will pose a question about a bug in their code and the TA will analyze their code and attempt to debug/provide a solution. 
 This lab report is based on the CSE 15L [Week 9 Website](https://ucsd-cse15l-s23.github.io/week/week9/). 
 
+___
+
+## Part 1: Debugging Scenario
+
 **1) The student makes a debuggin post on EdStem**
 
 *What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?*
@@ -51,6 +55,64 @@ I have also added two more test cases to demonstrate that my method works well. 
 
 ![Image](________________)
 
+___
+
+**4) All information needed to recreate this scenario**
+
+File/Directory Structure: 
+```
+/CSE15-Lab5
+-----* Example.java
+-----* script.sh
+```
+
+Contents of files BEFORE Fixing the bug: 
+`Example.java`: 
+```
+import java.util.Arrays;
+import java.util.List;
+
+public class Example {
+    public static int numInRow(List<Integer> catchOrder){
+        
+        int longestConsecutiveStreak = 1; 
+
+        for(int i = 1; i < catchOrder.size(); i++) {
+            if(catchOrder.get(i) - catchOrder.get(i - 1) == 1) {
+                longestConsecutiveStreak++; 
+
+            }
+            else {
+                // reset streak
+                longestConsecutiveStreak = 1; 
+            }
+        }
+
+        return longestConsecutiveStreak; 
+	} 
+
+    public static void main(String[] args) {
+        Integer[] arr1 = {1, 2, 3, 4, 0, 1, 2}; 
+        List<Integer> list1 = Arrays.asList(arr1); 
+        System.out.println("Result of numInRow() call on list1: " + numInRow(list1)); 
+
+    }
+}
+```
+
+`script.sh`: 
+```
+set -e
+javac Example.java
+java Example.java
+```
+
+To Trigger the bug: 
+The test case is already written in the main method of Example.java. To run everything, you must run the bash script through your terminal: `$ bash script.sh`
+
+To Fix the bug: 
+Add an integer variable called `maxStreak` into the method `numInRow` and initialize it to 1. Inside each loop iteration, add a check to see if the current value of `longestConsecutiveStreak` is greater than `maxStreak`. If so, set the value of `maxStreak` equal to that of `longestConsecutiveStreak`. This way, you will be able to save that max consecutive streak for the future, without unknowingly losing it. In the end of the method, return maxStreak. 
+
 Newly Rewritten method: 
 ```
 public static int numInRow(List<Integer> catchOrder){
@@ -76,13 +138,11 @@ public static int numInRow(List<Integer> catchOrder){
 } 
 ```
 
-**4) All information needed to recreate this scenario**
 
-File/Directory Structure: 
-```
-/CSE15-Lab5
------* Example.java
------* script.sh
-```
+___ 
+
+## Part 2: Reflection
+
+There were a bunch of really cool things that I learned in this second half of this quarter. For example, I found Vim really interesting to learn and use. I had always heard about the jokes and memes about Vim, but I had never really understood them until this quarter. Learning Vim gave me a another tool to edit my code efficiently. I also really liked creating the autograder script because I feel like there are many a real-life applications to that script. It was cool to see how it analyzed files through bash commands and other skills we had learned throughout the quarter. Overall, I feel like I learned a lot in the second half of this quarter. 
 
 
