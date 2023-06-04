@@ -75,3 +75,14 @@ public static int numInRow(List<Integer> catchOrder){
         return maxStreak; 
 } 
 ```
+
+**4) All information needed to recreate this scenario**
+
+File/Directory Structure: 
+```
+/CSE15-Lab5
+-----* Example.java
+-----* script.sh
+```
+
+
