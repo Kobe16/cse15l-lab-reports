@@ -72,6 +72,7 @@ File/Directory Structure:
 ```
 
 Contents of files BEFORE Fixing the bug: 
+
 `Example.java`: 
 ```
 import java.util.Arrays;
