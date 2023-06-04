@@ -21,7 +21,7 @@ I am using a M2 Macbook Air, which runs MacOS. I am currently using Safari as my
 
 I am currently trying to write a Java program that, when given a list of integers, will return length of the longest group of consecutive ascending values. Right now, I have a class called Example, which contains a main method and a static method called `numInRow`. In the main method, I am calling upon `numInRow` and passing in a List of Integers: 1, 2, 3, 4, 0, 1, 2. Ideally, `numInRow` should return 4. Instead, it is returning 3. 
 
-![Image](lab5-beforefix)
+![Image](lab5-beforefix.png)
 
 Terminal input and output: 
 ```
@@ -58,7 +58,7 @@ To fix this error, I have added another variable called `maxStreak`. In each ite
 
 I have also added two more test cases to demonstrate that my method works well. In the second test, the maximum length of a group of consecutive ascending values is 2 (It appears at the start of the list: `6, 7`). In the third test, the maximum length of a group of consecutive ascending values is 3 (It appears at the start of the list: `0, 1, 2`). 
 
-![Image](lab5-afterfix)
+![Image](lab5-afterfix.png)
 
 ___
 
