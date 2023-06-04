@@ -41,6 +41,7 @@ I agree with you that there is something wrong with the behavior of your code. I
 ___
 
 **3) Student responds to the TA with results.**
+
 Hello, 
 Thank you for letting me know. I now understand what went wrong with my code. Originally, I would loop through the given list and increment the variable `longestConsecutiveStreak` everytime the current element had increased by a value of 1. I would also reset the `longestConsecutiveStreak` variable anytime the current element had not increased by a value of 1. However, I did not account for the fact that this solution would only give the length of the *last* group of consecutive ascending values. This is because the `longestConsecutiveStreak` variable is reset anytime a consecutive ascending streak is broken. This could mean that we could have, at one time in the loop, had the maximum consecutive streak stored in the `longestConsecutiveStreak` variable, but we would reset it once the streak was broken. In the example above, my method would loop through the array and see that there was a consecutive ascending streak of `1, 2, 3, 4` at first (`longestConsecutiveStreak` = 4), but that would reset to 1 when it encountered the value `0`. In the end, my method would return `3` because it would see that that the *last* group of consecutive ascending values was of length `3` (`0, 1, 2`). 
 
@@ -48,20 +49,22 @@ To fix this error, I have added another variable called `maxStreak`. In each ite
 
 I have also added two more test cases to demonstrate that my method works well. In the second test, the maximum length of a group of consecutive ascending values is 2 (It appears at the start of the list: `6, 7`). In the third test, the maximum length of a group of consecutive ascending values is 3 (It appears at the start of the list: `0, 1, 2`). 
 
+![Image](________________)
 
-
-New 
+Newly Rewritten method: 
 ```
-int longestConsecutiveStreak = 1; 
-        // int maxStreak = 1; 
+public static int numInRow(List<Integer> catchOrder){
+        
+        int longestConsecutiveStreak = 1; 
+        int maxStreak = 1; 
 
         for(int i = 1; i < catchOrder.size(); i++) {
             if(catchOrder.get(i) - catchOrder.get(i - 1) == 1) {
                 longestConsecutiveStreak++; 
 
-                // if (longestConsecutiveStreak > maxStreak) {
-                //     maxStreak = longestConsecutiveStreak; 
-                // }
+                if (longestConsecutiveStreak > maxStreak) {
+                    maxStreak = longestConsecutiveStreak; 
+                }
             }
             else {
                 // reset streak
@@ -69,6 +72,6 @@ int longestConsecutiveStreak = 1;
             }
         }
 
-        // return maxStreak; 
-        return longestConsecutiveStreak; 
+        return maxStreak; 
+} 
 ```
