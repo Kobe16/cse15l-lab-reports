@@ -113,10 +113,12 @@ javac Example.java
 java Example.java
 ```
 
-To Trigger the bug: 
+To Trigger the bug:
+
 The test case is already written in the main method of Example.java. To run everything, you must run the bash script through your terminal: `$ bash script.sh`
 
 To Fix the bug: 
+
 Add an integer variable called `maxStreak` into the method `numInRow` and initialize it to 1. Inside each loop iteration, add a check to see if the current value of `longestConsecutiveStreak` is greater than `maxStreak`. If so, set the value of `maxStreak` equal to that of `longestConsecutiveStreak`. This way, you will be able to save that max consecutive streak for the future, without unknowingly losing it. In the end of the method, return maxStreak. 
 
 Newly Rewritten method: 
