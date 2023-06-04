@@ -13,10 +13,12 @@ ___
 **1) The student makes a debugging post on EdStem**
 
 *What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?*
+
 I am using a M2 Macbook Air, which runs MacOS. I am currently using Safari as my web browser, Bash as my terminal shell, and VSCode for my code editor. 
 
 
 *Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.*
+
 I am currently trying to write a Java program that, when given a list of integers, will return length of the longest group of consecutive ascending values. Right now, I have a class called Example, which contains a main method and a static method called `numInRow`. In the main method, I am calling upon `numInRow` and passing in a List of Integers: 1, 2, 3, 4, 0, 1, 2. Ideally, `numInRow` should return 4. Instead, it is returning 3. 
 
 ![Image](lab5-beforefix)
@@ -29,6 +31,7 @@ Result of numInRow() call on list1: 3
 
 
 *Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.*
+
 In the main method, I am calling upon `numInRow` and passing in a List of Integers: 1, 2, 3, 4, 0, 1, 2. Ideally, `numInRow` should return 4 because the first 4 elements are all consecutively increasing. Instead, it is returning 3. I am using a bash script to compile and run the file `Example.java`. It is simply three lines: 
 ```
 set -e
